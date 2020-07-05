@@ -571,10 +571,10 @@
 // 4 створити масив з будь якими значеннями (стрінги, числа, і тд...). пройтись по ньому, і якщо об'єкт є числом,
 //  додати його в інший масив.
 
-let m=[ 2, 'rgj', 4, true, 'wwbr', 3, 93, false];
-let num = [];
-for( let i=0; i<m.length; i++){
-       if(typeof m[i] === 'number') {num.push(m[i]);}
+// let m=[ 2, 'rgj', 4, true, 'wwbr', 3, 93, false];
+// let num = [];
+// for( let i=0; i<m.length; i++){
+//        if(typeof m[i] === 'number') {num.push(m[i]);}
       
-    }
-    console.log(num);
+//     }
+//     console.log(num);
