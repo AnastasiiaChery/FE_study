@@ -15,6 +15,7 @@ let text2  =document.getElementById('rules');
 let t2=(text2.textContent);
 console.log(t2);
 
+
 // - замініть текст параграфа з id 'content' на будь-який інший
 text1.innerHTML = '<b> Change </b>';
 

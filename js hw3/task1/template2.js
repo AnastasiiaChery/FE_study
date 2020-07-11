@@ -90,6 +90,7 @@ for(let i=0; i<text9.length; i++){
 // -- отримати елементи з класом text2 та змінити їм текст на довільне значення
 
 
+
 let text10 = document.getElementsByClassName('text2 ');
 for(let i=0; i<text10.length; i++){
     text10[i].textContent = 'tjvlwknvlkwbvojbw';
