@@ -1,15 +1,139 @@
 // - створити функцію яка виводить масив
+let masiv = [ 'Katya', 'Olya', 34, true, 195]
+function write(){
+    console.log(masiv)
+}
+write();
+
 // - створити функцію яка заповнює масив рандомними числами та виводить його. Для виведення використати попвередню функцію.
+
+let random_masiv = []
+function random(){
+    for(let i=0; i<20; i++){
+        random_masiv[i] = Math.floor(Math.random(i)*100)
+    }
+    console.log(random_masiv)
+}
+random()
+
 // - створити функцію яка приймає три числа та виводить та повертає найменьше.
+
+function min (a, b, c = 0) {
+   
+      if(b<a){ a=b}
+      if(c<a){ a=c}
+      console.log(a)
+      return a
+      
+
+}  
+min(5,8,15)
+
+
 // - створити функцію яка приймає три числа та виводить та повертає найбільше.
+
+function max (a, b, c = 0) {
+   
+    if(b>a){ a=b}
+    if(c>a){ a=c}
+    console.log(a)
+    return a
+}  
+max(5,8,15)
+
 // - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше, а виводить найбільше
-// - створити функцію яка виводить масив
+
+function mas_min_max () {
+    let max = null;
+    if(arguments.length>0){max = arguments[0]}
+    for( let i =0; i<arguments.length; i++){
+      if(arguments[i]>max){ max = arguments[i]}
+    }
+
+    let min = null;
+    if(arguments.length>0){min = arguments[0]}
+    for( let i =0; i<arguments.length; i++){
+      if(arguments[i]<min){ min = arguments[i]}
+    }
+    console.log(min);
+    return max;
+    
+    }  
+    
+    mas_min_max(-5, 5, 7, -9, 12, -90)
+
 // - створити функцію яка повертає найбільше число з масиву
+function max_mas () {
+    let max = null;
+    if(arguments.length>0){max = arguments[0]}
+    for( let i =0; i<arguments.length; i++){
+      if(arguments[i]>max){ max = arguments[i]}
+    }
+    return max;
+       
+    }  
+    max_mas(-5, 5, 7, -9, 12, -90)
+
 // - створити функцію яка повертає найменьше число з масиву
+
+function min_mas () {
+    let min = null;
+    if(arguments.length>0){min = arguments[0]}
+    for( let i =0; i<arguments.length; i++){
+      if(arguments[i]<min){ min = arguments[i]}
+    }
+    return min;
+       
+    }  
+   min_mas(-5, 5, 7, -9, 12, -90)
+
 // - створити функцію яка приймає масив чисел та складає значення елементів масиву та повертає його.
+
+function sum(){
+    let s = 0;
+    for(let i = 0; i<arguments.length; i++){
+       s = s+ arguments[i]
+
+    }
+    
+    return s
+}
+sum(3, 1, 7, -1)
 // - створити функцію яка приймає масив чисел та повертає середнє арифметичне його значень.
+
+function sr(){
+    let sred = 0;
+    for(let i = 0; i<arguments.length; i++){
+       sred = sred+ arguments[i]
+        }
+        let final = sred/arguments.length;
+    return final;
+}
+sr(3, 5, 7, -7)
+
 // - Створити функцію яка приймає масив будь яких объектів, та повертає значення кількості об'єктів в масиві
+
+function obj(){
+    console.log(arguments.length)
+    return arguments.length
+}
+
+
+obj({name:'Kolya', obj:'home'}, {name:'vasya',obj:'car'}, {name:'katya',obj:'food'}, {name:'liza',obj:'bag'});
+
 // - Створити функцію яка приймає масив будь яких объектів, та повертає загальн кількість полів в них
+
+function field(){
+ let counter = 0;
+    for(let el_1 of arguments)
+    {
+        for (let key in el_1) counter++;
+    }
+    console.log(counter); 
+    return counter;
+}
+field({name:'Kolya', obj:'home'}, {name:'vasya',obj:'car'}, {name:'katya',obj:'food'}, {name:'liza',obj:'bag'} )
+
 // - створити функцію  яка скаладає значення елементів з однаковими індексами  та повертає новий результуючий масив.
 //   Приклад
 //   [1,2,3,4]
@@ -26,7 +150,20 @@
 
 // Створити функцію яка :
 // - Додає в боді блок з текстом "Hello owu"
+function text (){
+    document.write("Hello owu");
+    document.write('<br>');
+    }
+text ()
 // - Додає в боді елемент з текстом . Тип елементу та текст отримати через аргументи
+
+function el_text (a){
+      document.write(a);
+      document.write('<br>');
+      console.log(typeof a)
+    }
+el_text ('vhihcbacjk')
+
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
 // Для кожного автомобіля створити свій блок, та додати його в елемент, індентифікатор якого ви отримали. Всі властивості авто в обному блоці
 // - приймає масив автомобілів (можна взяти з попередніх дз ),та  індентифікатор елемнту в який потрібно додати список цих автомобілів.
