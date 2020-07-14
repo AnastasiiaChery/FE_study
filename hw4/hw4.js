@@ -165,18 +165,16 @@ let mas2 =  [2,3,4,5]
 let control_masiv = [1,2,3,4,5,6];
 function control (array, numb){
     for(let i = 0; i<array.length; i++){
-        if([i] === numb){
-            let n = (array[i]);
-            array[i] = array[i +1];
-            array[i +1] = n;
+        if(i === numb){
+            let n = array[i];
+            array[i] = array[i+1];
+            array[i+1] = n;
             
-        }
-        return array;
-        
+        }    
  }
- 
+ return array;
 }
-console.log(control(control_masiv, '3'))
+console.log(control(control_masiv, 3))
 
 
 // - *** створити функцію яка буде переносити елементи з значенням 0 у кінець маисву. Зберігаючи при цьому порядок не нульових значень.
@@ -206,7 +204,7 @@ for(let i = 0; i<array.length; i++){
 return result
 }
 
-console.log("test",sort(numb_masiv))
+console.log(sort(numb_masiv))
 
 
 // Створити функцію яка :
@@ -400,10 +398,16 @@ for (let i = 0; i<array1.length; i++){
 // Операцией возведения в степень пользоваться нельзя!
 
 
-// 2) Deep Copy
-// реалізувати глибоке копіювання обєкту за допомогою рекурсій
+function step (num){
+    for(let i=num; i>=2; i=i/2){
+        if(i === 2){
+            console.log('Yes');
+            return
+        }
+            }
+    console.log('No')
+}
+step(12);
+step(256);
+step(-4);
 
-// 3) Flat
-// Вирівняти багаторівневий масив в однорівневий
-// [1,3, ['Hello, 'Wordd', [9,6,1]], ['oops'], 9] -> [1, 3, 'Hello, 'Wordd', 9, 6, 1, 'oops', 9]
-// ===========додаткове========
