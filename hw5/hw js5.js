@@ -428,5 +428,4 @@ class Prince {
 
 let eric = new Prince('Eric', 23, 36);
 
-
 eric.findCinderela(mas)
