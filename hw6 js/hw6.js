@@ -476,4 +476,4 @@ let arr = [1, 2, 3, 4, 4, 4, 4, 7, 7, 9, 14]
 
 console.log('Min Index:' + arr.findIndex( arr=> {return arr===4} ))
 
-console.log('Max Index:' + arr.lastIndexOf(8))
+console.log('Max Index:' + arr.lastIndexOf(4))
