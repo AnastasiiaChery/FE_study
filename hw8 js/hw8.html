@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div>
+    <textarea id = 'text' rows="10" cols="45" name="text"></textarea>
+    
+</div>
+<br>
+<br>
+<br>
+<form name="newForm" oninput="saveForm(this)">
+
+    <input id="name" name="name" value="" placeholder="Name"><br>
+    <input id="surname" name="surname" value="" placeholder="Surname"><br>
+    <input id='man' name="gender" type="radio" value="false"> Man <br>
+    <input id='woman' name="gender" type="radio" value="false"> Woman <br>
+    
+    <textarea id = 'about' rows="10" cols="45" value="false" placeholder="About you"></textarea> <br>
+
+    <select id='list'>
+        <option>Пункт 1</option>
+        <option>Пункт 2</option>
+        <option>Пункт 3</option>
+      </select> <br>
+
+    <input id = 'notif' type="checkbox" value="false" > Do you want to be notified? <br>
+
+  </form>
+
+  <br>
+  <br>
+  <br>
+  <div>
+    <textarea id = 'textArr' rows="10" cols="45" name="text"></textarea> <br>
+    <input type="button" id ='left'  value="Left">
+    <input type="button" id ='right' value="Right" ><br>
+    <button id='saveArr'> Save</button>
+</div><br>
+<br>
+<br>
+<br>
+
+
+<input type="text" id="name">
+<input type="text" id="phone">
+<input type="text" id="email">
+<input type="text" id="work">
+<input type="text" id="department">
+<input type="text" id="birthday">
+<button id="save">SAVE</button>
+
+<div id="allUsers"></div>
+
+<div id="editForm" style="display: none">
+    <input type="text" id="editName">
+    <input type="text" id="editPhone">
+    <input type="text" id="editEmail">
+    <input type="text" id="editWork">
+    <input type="text" id="editDepartment">
+    <input type="text" id="editBirthday">
+    <button id="saveEdit"> Save </button>
+</div>
+
+
+
+<script src="hw8.js"></script>
+</body>
+</html>
